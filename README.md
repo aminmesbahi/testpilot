@@ -25,3 +25,19 @@ Optimize for:
 - Minimum execution time
 - Dependency correctness
 - Environment constraints
+
+---
+
+# Domain Objects
+
+| Object | Description |
+|---|---|
+| `TestCase` | A single automated test with duration, risk, business value, failure history, flakiness, tags, and dependencies. |
+| `TestSuite` | A collection of test cases used as the input for optimization. |
+| `TestSelection` | The subset of tests selected by an optimizer. |
+| `DependencyViolation` | A missing required test for a selected dependent test. |
+| `OptimizationOptions` | Configuration for an optimization run, including budget, limits, seed, and penalties. |
+| `OptimizationResult` | The detailed output of an optimizer, including selection, fitness, timing, and metadata. |
+| `OptimizationSummary` | A compact, display-friendly summary of an optimization result. |
+| `FeatureAreaCoverage` | Coverage information for a single feature area. |
+| `TestSelectionReport` | A full report combining summary, selected tests, coverage, and dependency issues. |
